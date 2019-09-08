@@ -1,0 +1,18 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--</html>-->
+
+{% block footer%}
+    {% if now %}
+        <p style="font-family:微軟正黑體;">now : {{now}}</p>
+    {% else %}
+        <p style="font-family:微軟正黑體;">本文....</p>
+    {% endif %}
+{% endblock%}

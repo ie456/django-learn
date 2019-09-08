@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}
+    {{post.title}}-文學
+{% endblock%}
+{% block headmessage %}
+        <h3 style="font-family:微軟正黑體;">{{post.title}}</h3>
+        <a style="font-family:微軟正黑體;" href='/'>back</a>
+{% endblock %}
+{% block content %}
+     <p style="font-family:微軟正黑體;font-size:12pt;letter-spacing:2pt;">{{post.body}}</p>
+{% endblock %}
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>This title POST</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>{{post.title}}</h1>-->
+<!--    <hr>-->
+<!--    <p style="font-family:微軟正黑體;font-size:12pt;letter-spacing:2pt;">{{post.body}}</p>-->
+<!--    <hr>-->
+<!--    <h3><a href='/'>back</a></h3>-->
+<!--</body>-->
+<!--</html>-->

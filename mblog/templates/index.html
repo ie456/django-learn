@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}This is title{% endblock %}
+{% block headmessage %}
+    <h3 style="font-family:標楷體;">Content List</h3>
+{% endblock %}
+{% block content %}
+    {% for post in posts %}
+    <p style='font-family:微軟正黑體;font-size:16pt;font-weight:bold;'>
+        <a href='/post/{{post.slug}}'>{{post.title}}</a>
+    </p>
+    {% endfor %}
+{% endblock %}
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <title>This is title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>This is body</h1>-->
+<!--    <hr>-->
+<!--    {% for post in posts %}-->
+<!--    <p style='font-family:微軟正黑體;font-size:16pt;font-weight:bold;'>-->
+<!--        <a href='/post/{{post.slug}}'>{{post.title}}</a>-->
+<!--    </p>-->
+<!--    {% endfor %}-->
+<!--    <hr>-->
+<!--    <h3>現在時間 : {{now}}</h3>-->
+<!--</body>-->
+<!--</html>-->
